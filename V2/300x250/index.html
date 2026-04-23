@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="ad.size" content="width=300,height=250" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.13_min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "https://www.insurance.harley-davidson.com";
+    </script>
+  </head>
+
+  <body onload="init()">
+    <div id="main_container">
+      <!--start main_container-->
+      <div id="main_content" class="hidden">
+        <!-- <img src="images/f5.jpg" class="full-width" style="opacity: .5; z-index: 1111;" alt=""> -->
+
+        <div id="img">
+          <img src="images/bg1.jpg" class="full-width" id="bg1" alt="">
+        </div>
+        <div class="images">
+          <img src="images/bg2.jpg" id="bg2" class="hidden" alt="">
+          <img src="images/bg3.jpg" id="bg3" class="hidden" alt="">
+          <img src="images/bg4.svg" id="bg4" alt="">
+        </div>
+        <div class="textContainer">
+          <div class="copy" id="copy1">
+            protection that matters
+          </div>
+          <div class="copy" id="copy2">
+            optional equipment covered
+          </div>
+          <div class="copy" id="copy3">
+            SAVE UP TO 50% in discounts*
+          </div>
+          <div class="copy" id="copy4">
+            experience the harley difference
+          </div>
+        </div>
+
+        <img src="images/logo.svg" id="logo" alt="">
+
+        <div id="cta" class="hidden">GET QUOTE</div>
+      </div>
+
+      <div id="default_exit" class="btn"></div>
+      <!--end main_container-->
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript">
+      document
+        .getElementById("default_exit")
+        .addEventListener("click", function () {
+          window.open(clickTag, "_blank");
+        });
+    </script>
+  </body>
+</html>
