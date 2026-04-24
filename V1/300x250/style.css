@@ -106,6 +106,13 @@ video {
 .copy span{
   color: #FF6600;
 }
+#copy3 sup{
+  line-height: 0;
+  display: inline-block;
+  font-size: 17px;
+  position: absolute;
+  top: 15px;
+}
 #logo{
   width: 191px;
   left: 55px;

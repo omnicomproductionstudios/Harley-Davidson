@@ -90,11 +90,6 @@ video {
   will-change: transform, opacity;
 }
 
-
-/* #bg2{
-  transform: translateY(250px);
-  will-change: transform;
-} */
 .textContainer{
   width: 100%;
   height: 100%;
@@ -110,6 +105,13 @@ video {
 }
 .copy span{
   color: #FF6600;
+}
+#copy3 sup{
+  line-height: 0;
+  display: inline-block;
+  font-size: 17px;
+  position: absolute;
+  top: 15px;
 }
 #logo{
   width: 191px;
@@ -137,6 +139,10 @@ video {
 .images img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+#bg1, #img {
+  will-change: width, height, transform;
 }
 #cta{
   font-family: "body_font";

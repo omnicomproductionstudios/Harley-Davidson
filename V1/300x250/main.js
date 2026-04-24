@@ -18,7 +18,7 @@ function animate() {
   tl.set([copy2, copy3, copy4], { xPercent: -120 });
   tl.set([bg4], { y: 260 });
 
-  tl.addLabel("frame1", 0)
+  tl.addLabel("frame1", 1)
     .to(logo, 1, { width: 121, x: 34.5, y: 3, ease: "power1.inOut" }, "frame1")
     .to(img, 1, { width: 275, height: 157, x: 13, y: 11, ease: "power1.inOut" }, "frame1")
     .to(bg1, 1, { width: 306, x: -4, y: -42, ease: "power1.inOut" }, "frame1")

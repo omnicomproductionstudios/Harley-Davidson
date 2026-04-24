@@ -21,8 +21,8 @@ function animate() {
 
   tl.addLabel("frame1", 1)
     .to(logo, 1, { width: 121, x: 34.5, y: 3, ease: "power1.inOut" }, "frame1")
-    .to(img, 1, { width: 275, height: 157, x: 13, y: 11, ease: "power1.inOut" }, "frame1")
-    .to(bg1, 1, { width: 299, height: 250, x: -1, y: -63, ease: "power1.inOut" }, "frame1")
+    .to(img, 1, { width: 275, height: 156, x: 12, y: 12, ease: "power1.inOut" }, "frame1")
+    .to(bg1, 1, { width: 299, height: 250, x: -24, y: -78, ease: "power1.inOut" }, "frame1")
     .from(copy1, 0.5, { xPercent: -120, ease: "power1.inOut" }, "frame1+=1")
     .to(cta, 0.5, { autoAlpha:1, ease: "power1.inOut" }, "frame1+=1.7")
   
