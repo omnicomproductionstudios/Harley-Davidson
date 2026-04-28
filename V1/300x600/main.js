@@ -14,32 +14,31 @@ gsap.config({
   });
 function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
-  tl.set([logo, bg1, bg2, bg3, bg4, copy1, copy2, copy3, copy4, cta], {force3D: true});
-  tl.set([copy2, copy3, copy4], { xPercent: -120 });
-  tl.set([bg4], { y: 260 });
+  tl.set([".copy2 .line, .copy3 .line, .copy4 .line"], { xPercent: -160 });
+  tl.set([logo, img, bg1, bg2, bg3, bg4, copy1, copy2, copy3, copy4, cta], {force3D: true});
+  tl.set([bg4], { y: 361 });
 
   tl.addLabel("frame1", 1)
-    .to(logo, 1, { width: 121, x: 34.5, y: 3, ease: "power1.inOut" }, "frame1")
-
-    // .to(bg1, 1, { scale: 0.323, x:-234, y:-395, ease: "power1.inOut" }, "frame1")
-    // .to(overflow, 1, { overflow: "hidden" }, "frame1+=0.5")
-    .from(copy1, 0.5, { xPercent: -120, ease: "power1.inOut" }, "frame1+=1")
-    .to(cta, 0.5, { autoAlpha:1, ease: "power1.inOut" }, "frame1+=1.7")
+    .to(logo, 1, { width: 162, x: 27.5, y: 13, ease: "power1.inOut" }, "frame1")
+    .to(img, 1, { width: 248, height: 361, x: 26, y: 26, ease: 'Sine.easeOut' }, "frame1")
+    .to(bg1, 1, { width: 248, height: 436, x: 0, y: -44, ease: 'Sine.easeOut'}, "frame1")
+    .from(".copy1 .line", 0.5, { xPercent: -120, stagger: 0.2, ease: "power1.inOut" }, "frame1+=1")
+    .to(cta, 0.5, { autoAlpha:1, ease: "power1.inOut" }, "frame1+=1.9")
   
   .addLabel("frame2", "frame1+=3")
     .to([bg1, copy1], 0.5, {autoAlpha:0, ease: "power1.inOut" }, "frame2")
     .to(bg2, 0.5, {autoAlpha:1, ease: "power1.inOut" }, "frame2")
-    .to(copy2, 0.5, { xPercent: 0, ease: "power1.inOut" }, "frame2+=0.5")
-
+    .to(".copy2 .line", 0.5, { xPercent: 0, stagger: 0.2, ease: "power1.inOut" }, "frame2+=0.5")
+  
   .addLabel("frame3", "frame2+=3")
     .to([bg2, copy2], 0.5, {autoAlpha:0, ease: "power1.inOut" }, "frame3")
     .to(bg3, 0.5, {autoAlpha:1, ease: "power1.inOut" }, "frame3")
-    .to(copy3, 0.5, { xPercent: 0, ease: "power1.inOut" }, "frame3+=0.5")
+    .to(".copy3 .line", 0.5, { xPercent: 0, stagger: 0.2, ease: "power1.inOut" }, "frame3+=0.5")
 
   .addLabel("frame4", "frame3+=3")
     .to([copy3, logo], 0.5, {autoAlpha:0, ease: "power1.inOut" }, "frame4")
-    .to(bg4, 0.5, { y: 0,ease: "power1.inOut" }, "frame4")
-    .to(copy4, 0.5, { xPercent: 0, ease: "power1.inOut" }, "frame4+=0.5")
+    .to(bg4, 0.8, { y: 0,ease: "power1.inOut" }, "frame4")
+    .to(".copy4 .line", 0.5, { xPercent: 0, stagger: 0.2, ease: "power1.inOut" }, "frame4+=0.5")
 }
 
 function setRollover() {

@@ -98,47 +98,58 @@ video {
 }
 .copy{
   font-family: "heading_font";
-  font-size: 42.2px;
-  line-height: 40.2px;
-  top: 408px;
-  left: 25px;
+  font-size: 43px;
+  line-height: 40px;
+  top: 407.5px;
+  left: 24px;
   text-transform: uppercase;
 }
-.copy span{
+.copy .line{
+  display: inline-block;
+}
+.copy .orange{
   color: #FF6600;
 }
 #copy3 sup{
   line-height: 0;
   display: inline-block;
-  font-size: 17px;
+  font-size: 27px;
   position: absolute;
   top: 15px;
 }
 #logo{
-  width: 215px;
-  left: 43px;
+  width: 216px;
+  left: 42px;
   top: 30px;
   transform-origin: center;
 }
-#overflow{
-  width: 248px;
-  height: 375px;
+#img{
+  width: 300px;
+  height: 600px;
   left: 0px;
   top: 0px;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: absolute;
 }
+
 .images{
   position: absolute;
-  width: 276px;
-  height: 156px;
-  left: 12px;
-  top: 12px;
+  width: 248px;
+  height: 361px;
+  left: 26px;
+  top: 26px;
   overflow: hidden;
 }
 .images img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+#bg1, #img {
+  will-change: width, height, transform;
+}
+#bg1{
+  object-fit: cover;
 }
 #cta{
   font-family: "body_font";
@@ -155,10 +166,5 @@ video {
   border-radius: 4px;
   will-change: transform;
 }
-
-#bg1{
-  width: 500px;
-  height: auto;
-  left: -115px;
-  top: -43px;
-}
+/* translate(-4px, -51px)
+scale: 1.4 */
